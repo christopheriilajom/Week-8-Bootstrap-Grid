@@ -10,16 +10,70 @@
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/836/PNG/512/Airbnb_icon-icons.com_66791.png">
     <title>Bali • Stays • Airbnb</title>
 
+    <!--MD BOOTSTRAP-->
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Material Design Bootstrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+ 
+     <!-- JQuery -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Bootstrap tooltips -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+     <!-- Bootstrap core JavaScript -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <!-- MDB core JavaScript -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+     <style>
+        .fullimage{
+          height: 100vh;
+          width: 100%;
+          background:url('CSS/background2.jpg');
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
   </head>
-  <body style="max-width:100%;  margin: 0 auto; background-color: #d2f5e3;">
-      <nav style="text-align: center;">
-          <h1 class="display-1">Airbnb</h1>
-          <p class="lead">Review COVID-19 travel restrictions before you book. <a href="https://www.airbnb.co.uk/help/topic/1418/government-travel-restrictions-and-advisories" style="color: black; text-decoration: underline;">Learn more</a></p>
+  <body style="background-color: #d2f5e3;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#"><i class="fab fa-airbnb"></i>Airbnb</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#navbar">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bali">Bali</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.airbnb.co.uk/help/topic/1418/government-travel-restrictions-and-advisories">COVID-19 Travel Restrictions</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       
-      <div class="container" style="margin: 0 auto">
+        <div class="jumbotron jumbotron-fluid fullimage">
+          <div class="container">
+            <h1 class="display-4">Bali, Indonesia</h1>
+            <p class="lead">Relax at our Beaches and Temples and Get That Monkey off Your Back</p>
+          </div>
+        </div> 
+      <!-- <nav style="text-align: center;">
+          <h1 class="display-1"><i class="fab fa-airbnb"></i>Airbnb</h1>
+          <p class="lead">Review COVID-19 travel restrictions before you book. <a href="https://www.airbnb.co.uk/help/topic/1418/government-travel-restrictions-and-advisories" style="color: black; text-decoration: underline;">Learn more</a><i class="fas fa-biohazard"></i></p>
+      </nav> -->
+      
+      <div class="container" id="bali">
         <div class='row'>
-
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
@@ -581,9 +635,49 @@
             </div>
     </div>
 
-    <footer style="text-align: center;padding: 20px 0 0 0;">
-        <a class="badge badge-secondary h6" href="http://facebook.com/penpenlajom" target="_blank">© Christopher II Lajom</a>
-        <h1 class="lead">For academic purposes only</h1>
+    <footer class="page-footer bg-dark">
+        <div class="bg-success">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col md-12 text-center">
+                        <a href="https://facebook.com/penpenlajom"><i class="fab fa-facebook text-white mr-4"></i></a>
+                        <a href="https://instagram.com/penpenlajom"><i class="fab fa-instagram text-white mr-4"></i></a>
+                        <a href="https://instagram.com/penpenlajom"><i class="fab fa-github text-white mr-4"></i></a>
+                    </div>
+                </div> 
+            </div>    
+        </div>
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">About Me</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 95px; height: 2px;">
+                    <p class="mt-2">I am a student in Emilio Aguinaldo College-Manila. This content is for academic purposes only</p>
+                </div>
+
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="https://facebook.com/penpenlajom">FACEBOOK</a></li>
+                        <li class="my-2"><a href="https://instagram.com/penpenlajom">INSTAGRAM</a></li>
+                        <li class="my-2"><a href="https://github.com/christopheriilajom">GITHUB</a></li>
+                        <li class="my-2"><a href="#"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Navigate</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#navbar"><i class="fas fa-home"></i>HOME</a></li>
+                        <li class="my-2"><a href="#bali"><i class="fas fa-image"></i>BALI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     
